@@ -20,6 +20,10 @@ function sendLINE(){
      })
    })
 }
+
+var user_message = json.events[0].message.text;
+var message = user_message.split(/\r\n|\n/);
+var post_message = "";
 var key　= 'open';
 // メッセージの内容をmessageにいれる
 
